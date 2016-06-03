@@ -1,0 +1,22 @@
+{
+  "name": "nerds",
+  "description": "Education project Nerds",
+  "main": "index.html",
+  "authors": [
+    "Dmitry Rusakov"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/jkikksa/6302-nerds",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "normalize-css": "normalize.css#^4.1.1",
+    "codeguide": "git://github.com/htmlacademy/codeguide.git"
+  }
+}

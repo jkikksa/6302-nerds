@@ -22,7 +22,7 @@ module.exports = function(grunt) {
       },
       less_watch: {
         files: '**/*.less',
-        tasks: ['less', 'autoprefixer', 'csscomb', 'csso']
+        tasks: ['less']
       }
     },
     copy: {

@@ -3,152 +3,164 @@
 <head>
   <meta charset="UTF-8">
   <title>Nerds</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:500,300,700&subset=latin,cyrillic" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
   <header class="main-header">
-    <h1>Студия Нёрдс</h1>
-    <nav class="main-menu">
-      <a href="#" class="main-menu__logo">
-        <img src="img/image_header__logo.png" alt="Nerds logo" width="139" height="56">
-      </a>
-      <ul class="main-menu__list">
-        <li class="main-menu__list-item">
-          <a href="#" class="main-menu__list-link">Студия</a>
-        </li>
-        <li class="main-menu__list-item">
-          <a href="#" class="main-menu__list-link">Клиенты</a>
-        </li>
-        <li class="main-menu__list-item">
-          <a href="#" class="main-menu__list-link">Магазин</a>
-        </li>
-        <li class="main-menu__list-item">
-          <a href="#" class="main-menu__list-link">Контакты</a>
-        </li>
-      </ul>
-      <ul class="user-menu__list">
-        <li class="user-menu__list-item">
-          <a href="#" class="main-menu__list-link">Корзина</a>
-        </li>
-      </ul>
-    </nav>
+    <div class="main-header__inner">
+      <h1 class="main-title">Студия Нёрдс</h1>
+      <nav class="main-menu">
+        <a class="main-menu__logo">
+          <img src="img/image_header__logo.png" alt="Nerds logo" width="139" height="56">
+        </a>
+        <ul class="main-menu__list">
+          <li class="main-menu__list-item">
+            <a class="main-menu__list-link main-menu__list-link--active">Студия</a>
+          </li>
+          <li class="main-menu__list-item">
+            <a class="main-menu__list-link" href="#">Клиенты</a>
+          </li>
+          <li class="main-menu__list-item">
+            <a class="main-menu__list-link" href="#">Магазин</a>
+          </li>
+          <li class="main-menu__list-item">
+            <a class="main-menu__list-link" href="#">Контакты</a>
+          </li>
+        </ul>
+        <ul class="user-menu">
+          <li class="user-menu__item">
+            <a href="#" class="user-menu__link user-menu__link--basket">Корзина</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
   </header>
   <main>
     <section class="slider">
-      <h2>Наш процесс работы</h2>
-      <ul class="slides">
-        <li class="slide">
-          <h3 class="slide__title">
-            Долго, дорого, скрупулезно.
-          </h3>
-          <p class="slide__text">
-            Математически выверенный дизайн
-            для вашего сайта или мобильного приложения.
-          </p>
-          <a href="#" class="slide__link">Узнать больше</a>
-        </li>
-        <li class="slide">
-          <h3 class="slide__title">
-            Любите ли вы математику, как любим ее мы?
-          </h3>
-          <p class="slide__text">
-            Нашим дизайнерам мы удаляем нейроны, ответственные
-            за креатив, чтобы дать им возможность все просчитать
-          </p>
-          <a href="#" class="slide__link">Узнать больше</a>
-        </li>
-        <li class="slide">
-          <h3 class="slide__title">
-            Только наркотики, только хардкор!
-          </h3>
-          <p class="slide__text">
-            Все дизайнерские решения в нашей компании принимаются
-            только под воздействием качественных галлюциногенов
-          </p>
-          <a href="#" class="slide__link">Узнать больше</a>
-        </li>
-      </ul>
+      <div class="slider__inner">
+        <h2 class="slider__title">Наш процесс работы</h2>
+        <ul class="slides">
+          <li class="slide slide--1">
+            <h3 class="slide__title">
+              Долго, дорого, скрупулезно.
+            </h3>
+            <p class="slide__text">
+              Математически выверенный дизайн<br>
+              для вашего сайта или мобильного приложения.
+            </p>
+            <a class="slide__link button button--pink" href="#">Узнать больше</a>
+          </li>
+          <li class="slide slide--2 slide--hide">
+            <h3 class="slide__title">
+              Любите ли вы математику, как любим ее мы?
+            </h3>
+            <p class="slide__text">
+              Нашим дизайнерам мы удаляем нейроны, ответственные
+              за креатив, чтобы дать им возможность все просчитать
+            </p>
+            <a class="slide__link button button--pink" href="#">Узнать больше</a>
+          </li>
+          <li class="slide slide--3 slide--hide">
+            <h3 class="slide__title">
+              Только наркотики, только хардкор!
+            </h3>
+            <p class="slide__text">
+              Все дизайнерские решения в нашей компании принимаются
+              только под воздействием качественных галлюциногенов
+            </p>
+            <a class="slide__link button button--pink" href="#">Узнать больше</a>
+          </li>
+        </ul>
+      </div>
     </section>
     <section class="features">
-      <h2>Наши преемущества</h2>
-      <ul class="features__list">
-        <li class="features__list-item">
-          <img class="features__list-item-image" src="img/image_features__websites.png" alt="" width="240" height="124">
-          <h3 class="features__list-item-title">
-            Веб-сайты
-          </h3>
-          <p class="features__list-item-text">
-            Мир никогда не будет прежним после того как увидит ваш сайт!
-          </p>
-          <a href="#">Заказать</a>
-        </li>
-        <li class="features__list-item">
-          <img class="features__list-item-image" src="img/image_features__apps.png" alt="" width="240" height="124">
-          <h3 class="features__list-item-title">
-            Приложения
-          </h3>
-          <p class="features__list-item-text">
-            Покорите топ-10 приложений в AppStrore и Google Play
-          </p>
-          <a href="#">Заказать</a>
-        </li>
-        <li class="features__list-item">
-          <img class="features__list-item-image" src="img/image_features__presentation.png" alt="" width="240" height="124">
-          <h3 class="features__list-item-title">
-            Презентации
-          </h3>
-          <p class="features__list-item-text">
-            Вы даже не подозреваете, насколько вы изумительны!
-          </p>
-          <a href="#">Заказать</a>
-        </li>
-      </ul>
+      <div class="features__inner">
+        <h2 class="features__title">Наши преемущества</h2>
+        <ul class="features__list">
+          <li class="features__list-item">
+            <img class="features__list-item-image" src="img/image_features__websites.png" alt="" width="240" height="124">
+            <h3 class="features__list-item-title">
+              Веб-сайты
+            </h3>
+            <p class="features__list-item-text">
+              Мир никогда не будет прежним после того как увидит ваш сайт!
+            </p>
+            <a class="button button--pink" href="#">Заказать</a>
+          </li>
+          <li class="features__list-item">
+            <img class="features__list-item-image" src="img/image_features__apps.png" alt="" width="240" height="124">
+            <h3 class="features__list-item-title">
+              Приложения
+            </h3>
+            <p class="features__list-item-text">
+              Покорите топ-10 приложений в AppStrore и Google Play
+            </p>
+            <a class="button button--green" href="#">Заказать</a>
+          </li>
+          <li class="features__list-item">
+            <img class="features__list-item-image" src="img/image_features__presentation.png" alt="" width="240" height="124">
+            <h3 class="features__list-item-title">
+              Презентации
+            </h3>
+            <p class="features__list-item-text">
+              Вы даже не подозреваете, насколько вы изумительны!
+            </p>
+            <a class="button button--yellow" href="#">Заказать</a>
+          </li>
+        </ul>
+      </div>
     </section>
     <section class="aboutus">
-      <h2>О нас</h2>
-      <p class="aboutus__slogan">
-        Мы — маленькая, но гордая дизайн-студия из Краснодара.
-      </p>
-      <p class="aboutus__text">
-        Исповедуем принципы минимализма и чистоты. Ставим математический
-        расчет выше креатива. Работаем не покладая рук, как роботы.
-      </p>
-      <img class="aboutus__logo" src="img/image_aboutus__logo.png" alt="Нердс с 2004 года"  width="240" height="119">
-      <section class="aboutus__wecando">
-        <h3 class="aboutus__wecando-title">Выполняем заказы на разработку:</h3>
-        <ul class="aboutus__wecando-list">
-          <li class="aboutus__wecando-item">Веб-сайтов любой сложности</li>
-          <li class="aboutus__wecando-item">Мобильных приложений для iOS и Android</li>
-          <li class="aboutus__wecando-item">Слайдшоу и видео для корпоративных презентаций</li>
-        </ul>
-      </section>
-      <section class="aboutus__howwework">
-        <h3 class="aboutus__howwework-title">Как мы работаем:</h3>
-        <ul class="aboutus__howwework-list">
-          <li class="aboutus__howwework-item">С самоотдачей 146%</li>
-          <li class="aboutus__howwework-item">Соблюдая сроки на 100%</li>
-          <li class="aboutus__howwework-item">По предоплате 50%</li>
-        </ul>
-      </section>
-      <section class="aboutus__ourworks">
-        <h3>Наши работы</h3>
-        <ul class="aboutus__ourworks-list">
-          <li class="aboutus__ourworks-item">
-            <a href="#">
-              <img src="img/image_ourworks__glukhanko.png" alt="Глуханько" width="198" height="37">
-            </a>
-          </li>
-          <li class="aboutus__ourworks-item">
-            <a href="#">
-              <img src="img/image_ourworks__htmlacademy.png" alt="HTML Academy" width="199" height="68">
-            </a>
-          </li>
-          <li class="aboutus__ourworks-item">
-            <a href="#">
-              <img src="img/image_ourworks__borodinski.png" alt="Barbershop Borodinski" width="209" height="90">
-            </a>
-          </li>
-        </ul>
-      </section>
+      <div class="aboutus__inner">
+        <h2 class="aboutus__title">О нас</h2>
+        <section class="aboutus__slogan">
+          <p class="aboutus__lead">
+            Мы — маленькая, но гордая дизайн-студия из Краснодара.
+          </p>
+          <p class="aboutus__text">
+            Исповедуем принципы минимализма и чистоты. Ставим математический
+            расчет выше креатива. Работаем не покладая рук, как роботы.
+          </p>
+        </section>
+        <img class="aboutus__logo" src="img/image_aboutus__logo.png" alt="Нердс с 2004 года"  width="240" height="119">
+        <section class="aboutus__wecando">
+          <h3 class="aboutus__wecando-title">Выполняем заказы на разработку:</h3>
+          <ul class="aboutus__wecando-list">
+            <li class="aboutus__wecando-item">Веб-сайтов любой сложности</li>
+            <li class="aboutus__wecando-item">Мобильных приложений для iOS и Android</li>
+            <li class="aboutus__wecando-item">Слайдшоу и видео для корпоративных презентаций</li>
+          </ul>
+        </section>
+        <section class="aboutus__howwework">
+          <h3 class="aboutus__howwework-title">Как мы работаем:</h3>
+          <ul class="aboutus__howwework-list">
+            <li class="aboutus__howwework-item">С самоотдачей 146%</li>
+            <li class="aboutus__howwework-item">Соблюдая сроки на 100%</li>
+            <li class="aboutus__howwework-item">По предоплате 50%</li>
+          </ul>
+        </section>
+        <section class="aboutus__ourworks">
+          <h3 class="aboutus__ourworks-title">Наши работы</h3>
+          <ul class="aboutus__ourworks-list">
+            <li class="aboutus__ourworks-item">
+              <a href="#">
+                <img src="img/image_ourworks__glukhanko.png" alt="Глуханько" width="198" height="37">
+              </a>
+            </li>
+            <li class="aboutus__ourworks-item">
+              <a href="#">
+                <img src="img/image_ourworks__htmlacademy.png" alt="HTML Academy" width="199" height="68">
+              </a>
+            </li>
+            <li class="aboutus__ourworks-item">
+              <a href="#">
+                <img src="img/image_ourworks__borodinski.png" alt="Barbershop Borodinski" width="209" height="90">
+              </a>
+            </li>
+          </ul>
+        </section>
+      </div>
     </section>
     <section class="map">
       <h2>Карта</h2>
@@ -161,25 +173,26 @@
     </section>
   </main>
   <footer class="main-footer">
-    <section class="social">
-      <h2>Мы в соцсетях</h2>
-      <ul class="social__list">
-        <li class="social__list-item">
-          <a class="social__link" href="#">Vkontakte</a>
-        </li>
-        <li class="social__list-item">
-          <a class="social__link" href="#">Facebook</a>
-        </li>
-        <li class="social__list-item">
-          <a class="social__link" href="#">Instagram</a>
-        </li>
-      </ul>
-    </section>
-    <section class="callfriend">
-      <h2>Давайте дружить, это выгодно!</h2>
-      <p>Скидка 10% для друзей из социальных сетей.</p>
-    </section>
-
+    <div class="main-footer__inner">
+      <section class="social">
+        <h2 class="social__title">Мы в соцсетях</h2>
+        <ul class="social__list">
+          <li class="social__list-item">
+            <a class="social__link social__link--vkontakte" href="#">Vkontakte</a>
+          </li>
+          <li class="social__list-item">
+            <a class="social__link social__link--facebook" href="#">Facebook</a>
+          </li>
+          <li class="social__list-item">
+            <a class="social__link social__link--instagram" href="#">Instagram</a>
+          </li>
+        </ul>
+      </section>
+      <section class="callfriends">
+        <h2 class="callfriends__title">Давайте дружить, это выгодно!</h2>
+        <p class="callfriends__text">Скидка 10% для друзей из социальных сетей.</p>
+      </section>
+    </div>
   </footer>
 </body>
 </html>
