@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <title>Nerds catalog</title>
   <link href="https://fonts.googleapis.com/css?family=Roboto:500,300,700&subset=latin,cyrillic" rel="stylesheet" type="text/css">
-  <!-- <link rel="stylesheet" href="css/style.css"> -->
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
   <header class="main-header">
@@ -33,102 +33,106 @@
           </li>
         </ul>
       </nav>
-      <h1 class="main-title">Добро пожаловать в магазин готовых макетов</h1>
+      <h1 class="page-title">Добро пожаловать в магазин готовых макетов</h1>
     </div>
   </header>
-  <main>
-    <form class="filters" action="#" method="get">
-      <h2>Фильтры</h2>
-      <fieldset class="filters__price">
-        <legend>Стоимость:</legend>
-        <label for="valueMin">От</label>
-        <input type="text" name="price-min" id="priceMin" value="0">
-        <label for="valueMax">До</label>
-        <input type="text" name="price-max" id="priceMax" value="15000">
-      </fieldset>
-      <fieldset class="filters__grids">
-        <legend>Сетка:</legend>
-        <p>
-          <input type="radio" name="filters_grids" id="radio-1" value="responsive" checked>
-          <label for="radio-1">Адаптивная</label>
-        </p>
-        <p>
-          <input type="radio" name="filters_grids" id="radio-2" value="fixed">
-          <label for="radio-2">Фиксированная</label>
-        </p>
-        <p>
-          <input type="radio" name="filters_grids" id="radio-3" value="adaptive">
-          <label for="radio-3">Резиновая</label>
-        </p>
-      </fieldset>
-      <fieldset class="filters__features">
-        <legend>Особенности:</legend>
-        <p>
-          <input type="checkbox" name="slider" id="checkbox-1" checked>
-          <label for="checkbox-1">Слайдер</label>
-        </p>
-        <p>
-          <input type="checkbox" name="features" id="checkbox-2">
-          <label for="checkbox-2">Блок преимуществ</label>
-        </p>
-        <p>
-          <input type="checkbox" name="news" id="checkbox-3" checked>
-          <label for="checkbox-3">Новости</label>
-        </p>
-        <p>
-          <input type="checkbox" name="gallary" id="checkbox-4">
-          <label for="checkbox-4">Галерея</label>
-        </p>
-        <p>
-          <input type="checkbox" name="basket" id="checkbox-5">
-          <label for="checkbox-5">Корзина</label>
-        </p>
-      </fieldset>
-      <input type="submit" value="Показать">
-    </form>
-    <section class="catalog">
-      <h2>Каталог макетов</h2>
-      <article class="product-item">
-        <h3 class="product-item__title">Aviator</h3>
-        <p class="product-item__description">Одностраничный макет с авторским дизайном</p>
-        <a href="#">8000 Р.</a>
-      </article>
-      <article class="product-item">
-        <h3 class="product-item__title">Sunset</h3>
-        <p class="product-item__description">Интернет-магазин с личным кабинетом</p>
-        <a href="#">10000 Р.</a>
-      </article>
-      <article class="product-item">
-        <h3 class="product-item__title">Forte</h3>
-        <p class="product-item__description">Отличный макет для личного блога</p>
-        <a href="#">5000 Р.</a>
-      </article>
-      <article class="product-item">
-        <h3 class="product-item__title">Modern Organic THAI</h3>
-        <p class="product-item__description">Сайт для ресторана быстрого питания</p>
-        <a href="#">12000 Р.</a>
-      </article>
-      <article class="product-item">
-        <h3 class="product-item__title">Avenue</h3>
-        <p class="product-item__description">Макет для блога о путешествиях</p>
-        <a href="#">8000 Р.</a>
-      </article>
-      <article class="product-item">
-        <h3 class="product-item__title">Dovetail</h3>
-        <p class="product-item__description">Интернет-магазин с галереей товаров</p>
-        <a href="#">14000 Р.</a>
-      </article>
-    </section>
+  <main class="page-catalog">
+    <div class="page-catalog__inner">
+      <form class="filters" action="#" method="get">
+        <h2>Фильтры</h2>
+        <fieldset class="filters__price">
+          <legend>Стоимость:</legend>
+          <label for="valueMin">От</label>
+          <input type="text" name="price-min" id="priceMin" value="0">
+          <label for="valueMax">До</label>
+          <input type="text" name="price-max" id="priceMax" value="15000">
+        </fieldset>
+        <fieldset class="filters__grids">
+          <legend>Сетка:</legend>
+          <p>
+            <input type="radio" name="filters_grids" id="radio-1" value="responsive" checked>
+            <label for="radio-1">Адаптивная</label>
+          </p>
+          <p>
+            <input type="radio" name="filters_grids" id="radio-2" value="fixed">
+            <label for="radio-2">Фиксированная</label>
+          </p>
+          <p>
+            <input type="radio" name="filters_grids" id="radio-3" value="adaptive">
+            <label for="radio-3">Резиновая</label>
+          </p>
+        </fieldset>
+        <fieldset class="filters__features">
+          <legend>Особенности:</legend>
+          <p>
+            <input type="checkbox" name="slider" id="checkbox-1" checked>
+            <label for="checkbox-1">Слайдер</label>
+          </p>
+          <p>
+            <input type="checkbox" name="features" id="checkbox-2">
+            <label for="checkbox-2">Блок преимуществ</label>
+          </p>
+          <p>
+            <input type="checkbox" name="news" id="checkbox-3" checked>
+            <label for="checkbox-3">Новости</label>
+          </p>
+          <p>
+            <input type="checkbox" name="gallary" id="checkbox-4">
+            <label for="checkbox-4">Галерея</label>
+          </p>
+          <p>
+            <input type="checkbox" name="basket" id="checkbox-5">
+            <label for="checkbox-5">Корзина</label>
+          </p>
+        </fieldset>
+        <input type="submit" value="Показать">
+      </form>
+      <section class="catalog">
+        <h2 class="catalog__title">Каталог макетов</h2>
+        <article class="product-item">
+          <h3 class="product-item__title">Aviator</h3>
+          <p class="product-item__description">Одностраничный макет с авторским дизайном</p>
+          <a href="#">8000 Р.</a>
+        </article>
+        <article class="product-item">
+          <h3 class="product-item__title">Sunset</h3>
+          <p class="product-item__description">Интернет-магазин с личным кабинетом</p>
+          <a href="#">10000 Р.</a>
+        </article>
+        <article class="product-item">
+          <h3 class="product-item__title">Forte</h3>
+          <p class="product-item__description">Отличный макет для личного блога</p>
+          <a href="#">5000 Р.</a>
+        </article>
+        <article class="product-item">
+          <h3 class="product-item__title">Modern Organic THAI</h3>
+          <p class="product-item__description">Сайт для ресторана быстрого питания</p>
+          <a href="#">12000 Р.</a>
+        </article>
+        <article class="product-item">
+          <h3 class="product-item__title">Avenue</h3>
+          <p class="product-item__description">Макет для блога о путешествиях</p>
+          <a href="#">8000 Р.</a>
+        </article>
+        <article class="product-item">
+          <h3 class="product-item__title">Dovetail</h3>
+          <p class="product-item__description">Интернет-магазин с галереей товаров</p>
+          <a href="#">14000 Р.</a>
+        </article>
+      </section>
+    </div>
   </main>
   <article class="map">
-    <h2>Карта</h2>
-    <article class="contacts">
-      <h3>Наши Контакты</h3>
-      <p class="contacts__studio-name">NЁRDS DESIGN STUDIO</p>
-      <p class="contacts__address">191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
-      <p class="contacts__tel">тел. +7 (812) 275-75-75</p>
-      <a class="button" href="#">Напишите нам</a>
-    </article>
+    <div class="map__inner">
+      <h2 class="map__title">Карта</h2>
+      <article class="contacts">
+        <h3 class="contacts__title">Наши Контакты</h3>
+        <p class="contacts__studio-name">NЁRDS DESIGN STUDIO</p>
+        <p class="contacts__address">191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+        <p class="contacts__tel">тел. +7 (812) 275-75-75</p>
+        <a class="contacts__link button button--pink" href="#">Напишите нам</a>
+      </article>
+    </div>
   </article>
   <footer class="main-footer">
     <div class="main-footer__inner">
