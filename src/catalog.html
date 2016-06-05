@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Nerds catalog</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:500,300,700&subset=latin,cyrillic" rel="stylesheet" type="text/css">
+  <!-- <link rel="stylesheet" href="css/style.css"> -->
+</head>
+<body>
+  <header class="main-header">
+    <div class="main-header__inner">
+      <nav class="main-menu">
+        <a class="main-menu__logo" href="index.html">
+          <img src="img/image_header__logo.png" alt="Nerds logo" width="139" height="56">
+        </a>
+        <ul class="main-menu__list">
+          <li class="main-menu__list-item">
+            <a class="main-menu__list-link" href="index.html">Студия</a>
+          </li>
+          <li class="main-menu__list-item">
+            <a class="main-menu__list-link" href="#">Клиенты</a>
+          </li>
+          <li class="main-menu__list-item">
+            <a class="main-menu__list-link main-menu__list-link--active">Магазин</a>
+          </li>
+          <li class="main-menu__list-item">
+            <a class="main-menu__list-link" href="#">Контакты</a>
+          </li>
+        </ul>
+        <ul class="user-menu">
+          <li class="user-menu__item">
+            <a href="#" class="user-menu__link user-menu__link--basket">Корзина</a>
+          </li>
+        </ul>
+      </nav>
+      <h1 class="main-title">Добро пожаловать в магазин готовых макетов</h1>
+    </div>
+  </header>
+  <main>
+    <form class="filters" action="#" method="get">
+      <h2>Фильтры</h2>
+      <fieldset class="filters__price">
+        <legend>Стоимость:</legend>
+        <label for="valueMin">От</label>
+        <input type="text" name="price-min" id="priceMin" value="0">
+        <label for="valueMax">До</label>
+        <input type="text" name="price-max" id="priceMax" value="15000">
+      </fieldset>
+      <fieldset class="filters__grids">
+        <legend>Сетка:</legend>
+        <p>
+          <input type="radio" name="filters_grids" id="radio-1" value="responsive" checked>
+          <label for="radio-1">Адаптивная</label>
+        </p>
+        <p>
+          <input type="radio" name="filters_grids" id="radio-2" value="fixed">
+          <label for="radio-2">Фиксированная</label>
+        </p>
+        <p>
+          <input type="radio" name="filters_grids" id="radio-3" value="adaptive">
+          <label for="radio-3">Резиновая</label>
+        </p>
+      </fieldset>
+      <fieldset class="filters__features">
+        <legend>Особенности:</legend>
+        <p>
+          <input type="checkbox" name="slider" id="checkbox-1" checked>
+          <label for="checkbox-1">Слайдер</label>
+        </p>
+        <p>
+          <input type="checkbox" name="features" id="checkbox-2">
+          <label for="checkbox-2">Блок преимуществ</label>
+        </p>
+        <p>
+          <input type="checkbox" name="news" id="checkbox-3" checked>
+          <label for="checkbox-3">Новости</label>
+        </p>
+        <p>
+          <input type="checkbox" name="gallary" id="checkbox-4">
+          <label for="checkbox-4">Галерея</label>
+        </p>
+        <p>
+          <input type="checkbox" name="basket" id="checkbox-5">
+          <label for="checkbox-5">Корзина</label>
+        </p>
+      </fieldset>
+      <input type="submit" value="Показать">
+    </form>
+    <section class="catalog">
+      <h2>Каталог макетов</h2>
+      <article class="product-item">
+        <h3 class="product-item__title">Aviator</h3>
+        <p class="product-item__description">Одностраничный макет с авторским дизайном</p>
+        <a href="#">8000 Р.</a>
+      </article>
+      <article class="product-item">
+        <h3 class="product-item__title">Sunset</h3>
+        <p class="product-item__description">Интернет-магазин с личным кабинетом</p>
+        <a href="#">10000 Р.</a>
+      </article>
+      <article class="product-item">
+        <h3 class="product-item__title">Forte</h3>
+        <p class="product-item__description">Отличный макет для личного блога</p>
+        <a href="#">5000 Р.</a>
+      </article>
+      <article class="product-item">
+        <h3 class="product-item__title">Modern Organic THAI</h3>
+        <p class="product-item__description">Сайт для ресторана быстрого питания</p>
+        <a href="#">12000 Р.</a>
+      </article>
+      <article class="product-item">
+        <h3 class="product-item__title">Avenue</h3>
+        <p class="product-item__description">Макет для блога о путешествиях</p>
+        <a href="#">8000 Р.</a>
+      </article>
+      <article class="product-item">
+        <h3 class="product-item__title">Dovetail</h3>
+        <p class="product-item__description">Интернет-магазин с галереей товаров</p>
+        <a href="#">14000 Р.</a>
+      </article>
+    </section>
+  </main>
+  <article class="map">
+    <h2>Карта</h2>
+    <article class="contacts">
+      <h3>Наши Контакты</h3>
+      <p class="contacts__studio-name">NЁRDS DESIGN STUDIO</p>
+      <p class="contacts__address">191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+      <p class="contacts__tel">тел. +7 (812) 275-75-75</p>
+      <a class="button" href="#">Напишите нам</a>
+    </article>
+  </article>
+  <footer class="main-footer">
+    <div class="main-footer__inner">
+      <section class="social">
+        <h2 class="social__title">Мы в соцсетях</h2>
+        <ul class="social__list">
+          <li class="social__list-item">
+            <a class="social__link social__link--vkontakte" href="#">Vkontakte</a>
+          </li>
+          <li class="social__list-item">
+            <a class="social__link social__link--facebook" href="#">Facebook</a>
+          </li>
+          <li class="social__list-item">
+            <a class="social__link social__link--instagram" href="#">Instagram</a>
+          </li>
+        </ul>
+      </section>
+      <section class="callfriends">
+        <h2 class="callfriends__title">Давайте дружить, это выгодно!</h2>
+        <p class="callfriends__text">Скидка 10% для друзей из социальных сетей.</p>
+      </section>
+    </div>
+  </footer>
+</body>
+</html>
