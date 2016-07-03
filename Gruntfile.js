@@ -3,6 +3,7 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-copy');
   grunt.loadNpmTasks('grunt-contrib-less');
   grunt.loadNpmTasks('grunt-contrib-imagemin');
+  grunt.loadNpmTasks('grunt-contrib-concat');
 
 
   // grunt.registerTask('build', ['copy','less','imagemin','autoprefixer','csscomb', 'csso', 'concat', 'uglify']);
@@ -55,6 +56,12 @@ module.exports = function(grunt) {
           src: ['*.{png,jpg,gif,svg}'],
           dest: 'dist/img'
         }]
+      }
+    },
+    concat: {
+      dist: {
+        src: ['src/js/*.js'],
+        dest: 'dist/js/script.js',
       }
     },
   })

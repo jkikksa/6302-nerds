@@ -1,4 +1,70 @@
 .filters {
   flex-basis: 240px;
-  background-color: rgba(0,0,255,0.05);
+  fieldset {
+    border: none;
+
+    padding: 0;
+  }
+  legend {
+    font-size: 18px;
+    line-height: 30px;
+    color: #000000;
+    text-transform: uppercase;
+  }
+  &__title {
+    display: none;
+  }
+  &__price {
+    margin: 0;
+    margin-bottom: 42px;
+    legend {
+      margin-bottom: 13px;
+    }
+    input {
+      box-sizing: border-box;
+      border-radius: 2px;
+      width: 80px;
+      background-color: #f1f1f1;
+      border: none;
+      padding: 10px;
+      font-size: 16px;
+      line-height: 22px;
+      color: inherit;
+      font-family: inherit;
+      text-align: center;
+      &:hover {
+        border: none;
+      }
+      &:focus {
+        border: none;
+        outline: none;
+      }
+    }
+  }
+  &__grids {
+    margin: 0;
+    margin-bottom: 29px;
+    p {
+      margin: 17px 0;
+    }
+  }
+  &__features {
+    margin: 0;
+    margin-bottom: 40px;
+    p {
+      margin: 17px 0;
+    }
+  }
+  &__input-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    label {
+      text-transform: uppercase;
+    }
+  }
+  .button {
+    padding-left: 47px;
+    padding-right: 47px;
+  }
 }

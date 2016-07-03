@@ -19,6 +19,7 @@
   "homepage": "https://github.com/jkikksa/6302-nerds#readme",
   "devDependencies": {
     "grunt": "^1.0.1",
+    "grunt-contrib-concat": "^1.0.1",
     "grunt-contrib-copy": "^1.0.0",
     "grunt-contrib-imagemin": "^1.0.1",
     "grunt-contrib-less": "^1.3.0",

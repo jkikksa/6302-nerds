@@ -1,11 +1,13 @@
 .main-menu {
   display: flex;
   justify-content: flex-start;
-  padding: 20px 0;
+
   &__logo {
+    padding-bottom: 25px;
     img {
       display: block;
     }
+
   }
   &__list {
     .list-reset();
@@ -13,9 +15,11 @@
     width: 640px;
     justify-content: flex-end;
     align-items: center;
+    padding-right: 15px;
+    flex-wrap: wrap;
   }
   &__list-item {
-    margin-left: 15px;
+    margin-right: 46px;
   }
   &__list-link {
     color: @main-menu__link-color;

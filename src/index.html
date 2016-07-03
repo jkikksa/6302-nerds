@@ -41,7 +41,7 @@
       <div class="slider__inner">
         <h2 class="slider__title">Наш процесс работы</h2>
         <ul class="slides">
-          <li class="slide slide--1">
+          <li class="slide slide--1" id="slide1">
             <h3 class="slide__title">
               Долго, дорого, скрупулезно.
             </h3>
@@ -51,7 +51,7 @@
             </p>
             <a class="slide__link button button--pink" href="#">Узнать больше</a>
           </li>
-          <li class="slide slide--2 slide--hide">
+          <li class="slide slide--2" id="slide2">
             <h3 class="slide__title">
               Любите ли вы математику, как любим ее мы?
             </h3>
@@ -61,7 +61,7 @@
             </p>
             <a class="slide__link button button--pink" href="#">Узнать больше</a>
           </li>
-          <li class="slide slide--3 slide--hide">
+          <li class="slide slide--3" id="slide3">
             <h3 class="slide__title">
               Только наркотики, только хардкор!
             </h3>
@@ -72,6 +72,11 @@
             <a class="slide__link button button--pink" href="#">Узнать больше</a>
           </li>
         </ul>
+        <div class="slider-controls">
+          <button class="slider-controls__toggle" id="sliderToggle1"></button>
+          <button class="slider-controls__toggle" id="sliderToggle2"></button>
+          <button class="slider-controls__toggle" id="sliderToggle3"></button>
+        </div>
       </div>
     </section>
     <section class="features">
@@ -171,7 +176,7 @@
         <p class="contacts__studio-name">NЁRDS DESIGN STUDIO</p>
         <p class="contacts__address">191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
         <p class="contacts__tel">тел. +7 (812) 275-75-75</p>
-        <a class="contacts__link button button--pink" href="#">Напишите нам</a>
+        <a class="contacts__link button button--pink" id="writeusOpen" href="#">Напишите нам</a>
       </article>
     </div>
   </article>
@@ -197,5 +202,25 @@
       </section>
     </div>
   </footer>
+  <article class="write-us" id="writeus">
+    <h2 class="write-us__title">Напишите нам</h2>
+    <form class="write-us__form" action="#" method="get">
+      <div class="write-us__input-wrapper write-us__name">
+        <label for="writeusName">Ваше имя:</label>
+        <input type="text" name="name" id="writeusName" placeholder="Представьтесь, пожалуйста">
+      </div>
+      <div class="write-us__input-wrapper write-us__email">
+        <label for="writeusEmail">Ваш e-mail:</label>
+        <input type="email" name="email" id="writeusEmail" placeholder="Для отправки ответа">
+      </div>
+      <div class="write-us__input-wrapper write-us__text">
+        <label for="mainText">Текст письма:</label>
+        <textarea name="maintext" rows="4" cols="40" placeholder="В свободной форме" id="mainText"></textarea>
+      </div>
+      <input class="write-us__submit button button--pink" type="submit" value="Отправить">
+      <button class="write-us__close" id="writeusClose"></button>
+    </form>
+  </article>
+  <script src="js/script.js"></script>
 </body>
 </html>
